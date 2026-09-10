@@ -1,5 +1,5 @@
 <!DOCTYPE html>
-<html lang="ko" data-theme="">
+<html lang="ko" data-theme="dark">
 <head>
 <meta charset="UTF-8">
 <meta name="viewport" content="width=device-width,initial-scale=1.0">
@@ -322,7 +322,7 @@ footer{text-align:center;padding:2rem;font-size:.73rem;color:var(--text-3);borde
   </div>
   <div class="chips">
     <span class="chip">공원묘원 성묘 포함</span>
-    <span class="chip">입장료 성인 기준</span>
+    <span class="chip">입장료 연령별 반영 (성인2·청소년2·어린이1)</span>
     <span class="chip">식비 5인 30만원 이내</span>
     <span class="chip">5인 가족</span>
   </div>
@@ -333,11 +333,52 @@ footer{text-align:center;padding:2rem;font-size:.73rem;color:var(--text-3);borde
   <div class="plan-bar-inner">
     <span class="plan-label">일정 선택</span>
     <button class="ptab on" onclick="selPlan('a',this)">플랜 A — 2박 3일 (9/24~9/26)</button>
-    <button class="ptab" onclick="selPlan('b',this)">플랜 B — 3박 4일 (9/25~9/28)<span class="ref-badge">참고용</span></button>
+    <button class="ptab" onclick="selPlan('b',this)">플랜 B — 3박 4일 (9/24~9/27)<span class="ref-badge">참고용</span></button>
   </div>
 </div>
 
 <main>
+
+<div style="background:var(--bg-alt);padding:1rem 1.2rem 1.2rem;border-bottom:1px solid var(--border)">
+  <div class="sec-title" style="margin-bottom:.8rem;font-size:.85rem;letter-spacing:.06em">플랜 A / B 방문지 비교</div>
+  <div class="twrap" style="overflow-x:auto">
+    <table style="width:100%;border-collapse:collapse;font-size:.78rem">
+      <thead>
+        <tr style="border-bottom:2px solid var(--border2)">
+          <th style="padding:.5rem .7rem;text-align:left;color:var(--text-3);font-weight:600;white-space:nowrap;width:110px">일정</th>
+          <th style="padding:.5rem .7rem;text-align:left;color:var(--amber);font-weight:700">플랜 A — 2박 3일</th>
+          <th style="padding:.5rem .7rem;text-align:left;color:var(--blue);font-weight:700">플랜 B — 3박 4일 <span style="font-size:.72rem;font-weight:400;color:var(--text-3)">(참고용)</span></th>
+        </tr>
+      </thead>
+      <tbody>
+        <tr style="border-bottom:1px solid var(--border)">
+          <td style="padding:.55rem .7rem;white-space:nowrap;color:var(--text-3);font-size:.74rem"><span style="background:var(--plum);color:#fff;border-radius:50%;display:inline-block;width:18px;height:18px;text-align:center;line-height:18px;font-size:.65rem;margin-right:4px">D</span>9/23 수</td>
+          <td colspan="2" style="padding:.55rem .7rem;color:var(--text-2)">이천 인트라다 호텔 이동·합류 / 털보네보쌈 저녁</td>
+        </tr>
+        <tr style="border-bottom:1px solid var(--border)">
+          <td style="padding:.55rem .7rem;white-space:nowrap;color:var(--text-3);font-size:.74rem"><span style="background:var(--amber);color:#fff;border-radius:50%;display:inline-block;width:18px;height:18px;text-align:center;line-height:18px;font-size:.7rem;font-weight:700;margin-right:4px">1</span>9/24 목</td>
+          <td style="padding:.55rem .7rem;color:var(--text)">공원묘원 성묘 → <b>양동마을</b> → <b>옥산서원</b> → 황성초등학교 → 시골여행(손칼국수) → 아빠 생가(동천동 758-23) → 경주고등학교 → <b>대릉원</b> → <b>첨성대·계림·반월성</b> → 황리단길 · 체크인</td>
+          <td style="padding:.55rem .7rem;color:var(--text)">공원묘원 성묘 → 황성초등학교 → 시골여행(손칼국수) → 아빠 생가(동천동 758-23) → 경주고등학교 → <b>대릉원</b> → <b>첨성대·계림·반월성</b> → 황리단길 · 체크인</td>
+        </tr>
+        <tr style="border-bottom:1px solid var(--border)">
+          <td style="padding:.55rem .7rem;white-space:nowrap;color:var(--text-3);font-size:.74rem"><span style="background:var(--amber);color:#fff;border-radius:50%;display:inline-block;width:18px;height:18px;text-align:center;line-height:18px;font-size:.7rem;font-weight:700;margin-right:4px">2</span>9/25 금</td>
+          <td colspan="2" style="padding:.55rem .7rem;color:var(--text)"><b>불국사</b> → <b>석굴암</b> → <b>국립경주박물관</b> → 교촌마을 → 경주 쌈밥 → <b>동궁과 월지 야경</b></td>
+        </tr>
+        <tr style="border-bottom:1px solid var(--border)">
+          <td style="padding:.55rem .7rem;white-space:nowrap;color:var(--text-3);font-size:.74rem"><span style="background:var(--amber);color:#fff;border-radius:50%;display:inline-block;width:18px;height:18px;text-align:center;line-height:18px;font-size:.7rem;font-weight:700;margin-right:4px">3</span>9/26 토</td>
+          <td style="padding:.55rem .7rem;color:var(--text)"><b>포석정</b> → 귀가 (인천)</td>
+          <td style="padding:.55rem .7rem;color:var(--text)">양동마을 → 옥산서원 → 문무대왕릉·감은사지 → 양남 주상절리</td>
+        </tr>
+        <tr>
+          <td style="padding:.55rem .7rem;white-space:nowrap;color:var(--text-3);font-size:.74rem"><span style="background:var(--jade);color:#fff;border-radius:50%;display:inline-block;width:18px;height:18px;text-align:center;line-height:18px;font-size:.7rem;font-weight:700;margin-right:4px">4</span>9/27 일</td>
+          <td style="padding:.55rem .7rem;color:var(--text-3)">—</td>
+          <td style="padding:.55rem .7rem;color:var(--text)">경주 남산 산책 → 귀가 (인천)</td>
+        </tr>
+      </tbody>
+    </table>
+  </div>
+</div>
+
 
 <!-- ══════════════════════════════════════════════════
      PLAN A  ·  2박 3일
@@ -345,16 +386,16 @@ footer{text-align:center;padding:2rem;font-size:.73rem;color:var(--text-3);borde
 <div class="plan-panel on" id="pA">
 
   <div class="ov">
-    <div class="ov-card"><div class="lbl">일정</div><div class="val">9/24(수) – 9/26(금)</div></div>
+    <div class="ov-card"><div class="lbl">일정</div><div class="val">9/24(목) – 9/26(토)</div></div>
     <div class="ov-card"><div class="lbl">숙박</div><div class="val">2박</div></div>
-    <div class="ov-card"><div class="lbl">예상 식비</div><div class="val hi">255,000원</div></div>
-    <div class="ov-card"><div class="lbl">예상 입장료</div><div class="val hi">110,000원</div></div>
+    <div class="ov-card"><div class="lbl">예상 식비</div><div class="val hi">240,000원</div></div>
+    <div class="ov-card"><div class="lbl">예상 입장료</div><div class="val hi">42,000원</div></div>
     <div class="ov-card"><div class="lbl">제대로 한식</div><div class="val">2회 (★)</div></div>
-    <div class="ov-card"><div class="lbl">주요 관광지</div><div class="val" style="font-size:.82rem">대릉원·불국사·석굴암·양동마을</div></div>
+    <div class="ov-card"><div class="lbl">주요 관광지</div><div class="val" style="font-size:.82rem">대릉원·불국사·석굴암·양동마을·옥산서원</div></div>
   </div>
 
   <div class="day-bar">
-    <button class="dtab" onclick="selDay('A','A0',this)">D-1 · 9/23 화</button>
+    <button class="dtab" onclick="selDay('A','A0',this)">D-1 · 9/23 수</button>
     <button class="dtab on" onclick="selDay('A','A1',this)">1일차 · 9/24</button>
     <button class="dtab" onclick="selDay('A','A2',this)">2일차 · 9/25</button>
     <button class="dtab" onclick="selDay('A','A3',this)">3일차 · 9/26 (귀가)</button>
@@ -364,7 +405,7 @@ footer{text-align:center;padding:2rem;font-size:.73rem;color:var(--text-3);borde
   <!-- ── A Day 0 (D-1) ── -->
   <div class="day-panel" id="dA-A0">
     <div class="dhead">
-      <div class="dhead-row"><span class="day-num" style="background:var(--plum);font-size:.7rem">D-1</span><h2>9월 23일 (화요일) — 인천 → 이천 인트라다 호텔 이동 · 합류</h2></div>
+      <div class="dhead-row"><span class="day-num" style="background:var(--plum);font-size:.7rem">D-1</span><h2>9월 23일 (수요일) — 인천 → 이천 인트라다 호텔 이동 · 합류</h2></div>
       <div class="dhead-sub">
         <span>출발: 인천 서구 예미지 더시그너스 13:00</span>
         <span>공항철도 → 9호선 → 분당선 → 경강선</span>
@@ -377,18 +418,17 @@ footer{text-align:center;padding:2rem;font-size:.73rem;color:var(--text-3);borde
         <thead><tr><th style="width:90px">시간</th><th>장소 / 활동</th><th style="width:90px">이동시간</th><th style="width:120px">교통편</th><th style="width:120px">비용(4인)</th><th>비고 · 팁</th></tr></thead>
         <tbody>
           <tr class="rv-move"><td>13:00</td><td><b>인천 서구 예미지 더시그너스</b> 출발<br><small class="sub">엄마 + 세 딸 (4인) · 아빠는 이미 이천 대기 중</small></td><td>–</td><td>도보</td><td class="fc-na">–</td><td>짐 간소화 / 캐리어 1개씩 권장 / 전날 밤 미리 준비</td></tr>
-          <tr class="rv-move"><td>~13:20</td><td><b>버스</b> → 계양역 (공항철도역)</td><td>약 20분</td><td>마을버스/광역버스</td><td class="fc-na">교통카드</td><td>검암역 or 계양역 방면 버스 이용</td></tr>
+          <tr class="rv-move"><td>~13:20</td><td><b>버스</b> → 계양역 (공항철도역)</td><td>약 20분</td><td>마을버스/광역버스</td><td class="fc-na">교통카드</td><td>계양역 방면 버스 이용</td></tr>
           <tr class="rv-move"><td>~13:30</td><td><b>공항철도(일반)</b> 탑승 → 김포공항역</td><td>약 10분</td><td>공항철도(일반)</td><td class="fc-na">교통카드</td><td>계양→김포공항역 약 10분 / 9호선 환승역</td></tr>
           <tr class="rv-move"><td>~13:45</td><td><b>김포공항역</b> → 9호선 급행 → 선정릉역</td><td>약 35분</td><td>9호선 급행</td><td><span class="fc">약 18,000원</span><small class="sub">4인 통합요금</small></td><td>급행 이용 약 30~35분 / 9호선↔수인분당선 환승역</td></tr>
           <tr class="rv-move"><td>~14:25</td><td><b>선정릉역</b> → 수인분당선 → 이매역</td><td>약 25분</td><td>수인분당선</td><td class="fc-na">교통카드 환승</td><td>선정릉에서 분당선 이매(여주) 방향 탑승</td></tr>
           <tr class="rv-move"><td>~14:55</td><td><b>이매역</b> → 경강선 환승 → 부발역</td><td>약 45분</td><td>경강선</td><td class="fc-na">교통카드 환승</td><td>이매역에서 경강선 여주 방향 탑승 / 이매→부발 약 40분</td></tr>
-          <tr class="rv-move"><td>~15:40</td><td><b>부발역</b> 도착</td><td>약 40분</td><td>경강선</td><td class="fc-na">–</td><td>이천시 부발읍 소재 / 역에서 호텔까지 택시 필요</td></tr>
-          <tr class="rv-move"><td>~15:55</td><td><b>택시</b> → 이천 인트라다 호텔</td><td>약 10~15분</td><td>택시</td><td><span class="fc">약 8,000원</span><small class="sub">1대 기준</small></td><td>카카오택시 사전 호출 권장 / 역에서 약 7km</td></tr>
-          <tr class="rv-sleep"><td>~16:10</td><td><b>이천 인트라다 호텔</b> 도착 · 아빠와 합류 · 체크인</td><td>–</td><td>–</td><td class="fc-na">숙박비 별도</td><td>아빠는 이미 체크인 완료 / 온천·수영장 시설 확인</td></tr>
-          <tr class="rv-meal"><td>18:30~19:30</td><td><b>저녁 — 이천 쌀밥 정식</b> <span class="b b-proper">★ 이천 명물</span></td><td>차 10분</td><td>–</td><td><span class="fc">60,000원~</span><small class="sub">인당 12,000원~</small></td><td>이천 도예촌·쌀밥 거리 / 임금님표 이천쌀 음식</td></tr>
+          <tr class="rv-move"><td>~15:40</td><td><b>부발역</b> 도착 · 도보 이동 시작</td><td>약 40분</td><td>경강선</td><td class="fc-na">–</td><td>이천시 부발읍 소재</td></tr>
+          <tr class="rv-sleep"><td>~16:00</td><td><b>이천 인트라다 호텔</b> 도착 · 아빠와 합류 · 체크인</td><td>–</td><td>–</td><td class="fc-na">숙박비 별도</td><td>아빠는 이미 체크인 완료 / 온천·수영장 시설 확인</td></tr>
+          <tr class="rv-meal"><td>18:30~19:30</td><td><b>저녁 — 털보네보쌈</b> <span class="b b-proper">★ 이천 명물</span></td><td>차 10분</td><td>–</td><td><span class="fc">55,000원~</span><small class="sub">인당 11,000원~</small></td><td>이천 보쌈 맛집 / 예약 권장</td></tr>
           <tr class="rv-sleep"><td>20:30</td><td> 호텔 복귀 · 휴식 · 취침</td><td>–</td><td>–</td><td class="fc-na">–</td><td>다음날 07:00 경주 출발 준비 / 짐 차에 미리 적재</td></tr>
         </tbody>
-        <tfoot><tr><td colspan="3">총 이동시간</td><td colspan="2">약 3시간 10분</td><td style="color:var(--text-2);font-weight:400;font-size:.76rem">교통비 4인 합계 약 18,000원 + 택시 / 이전보다 약 30분 단축</td></tr></tfoot>
+        <tfoot><tr><td colspan="3">총 이동시간</td><td colspan="2">약 3시간 10분</td><td style="color:var(--text-2);font-weight:400;font-size:.76rem">교통비 4인 합계 약 18,000원 / 부발역에서 도보 이동</td></tr></tfoot>
       </table>
     </div>
     <div class="note">
@@ -396,7 +436,7 @@ footer{text-align:center;padding:2rem;font-size:.73rem;color:var(--text-3);borde
       <ul>
         <li>인천 서구 예미지 → 버스 → 계양역 → 공항철도(일반) → 김포공항역</li>
         <li>김포공항역 → 9호선 급행 → 선정릉역 → 수인분당선 → 이매역</li>
-        <li>이매역 → 경강선(여주 방향) → 부발역 → 택시(약 7km) → 이천 인트라다 호텔</li>
+        <li>이매역 → 경강선(여주 방향) → 부발역 → 도보 → 이천 인트라다 호텔</li>
         <li>아빠는 별도 이동으로 이미 이천 인트라다 호텔 체크인 완료 후 대기</li>
         <li>이동 중 캐리어 보관 주의 / 혼잡 시간대 피해 13시 출발이 적당</li>
       </ul>
@@ -406,13 +446,21 @@ footer{text-align:center;padding:2rem;font-size:.73rem;color:var(--text-3);borde
   <!-- ── A Day 1 ── -->
   <div class="day-panel on" id="dA-A1">
     <div class="dhead">
-      <div class="dhead-row"><span class="day-num">1</span><h2>9월 24일 (수요일) — 이천 출발 · 성묘 · 경주 시내</h2></div>
+      <div class="dhead-row"><span class="day-num">1</span><h2>9월 24일 (목요일) — 이천 출발 · 성묘 · 양동마을·옥산서원 · 경주 시내</h2></div>
       <div class="dhead-sub">
         <span>이천 인트라다 호텔 출발 07:00 (5인 전원)</span>
-        <span>경주 공원묘원 성묘</span>
-        <span>계림 포함 · 체크인 17:30</span>
+        <span>경주 공원묘원 성묘 후 양동마을·옥산서원 연이어 방문</span>
+        <span>계림 포함 · 체크인 19:00 예상</span>
+        <span>동선상 이동거리 절약을 위해 강동면·안강읍 코스를 성묘 당일에 배치</span>
         <span>동궁과 월지 야경은 2일차 저녁으로 이동</span>
       </div>
+    </div>
+    <div class="note" style="margin-bottom:.9rem">
+      <strong>동선 안내</strong>
+      <ul>
+        <li>경주공원묘원(강동면)은 양동마을(11.3km)·옥산서원과 지리적으로 가까워, 성묘 당일 함께 방문 시 3일차에 따로 왕복(약 45km)하지 않아도 됩니다.</li>
+        <li>옥산서원 → 황성초등학교 구간은 약 24.7km(약 35~40분)로 이동시간이 늘어나므로, 1일차 전체 일정이 기존보다 1.5~2시간 길어집니다. 저녁 체크인이 늦어질 수 있으니 성묘·양동마을 관람 시간을 여유 있게 조율하세요.</li>
+      </ul>
     </div>
     <div class="legend">
       <span class="leg-item"><span class="leg-bar" style="background:var(--blue-pale);border:2px solid var(--blue)"></span>이동</span>
@@ -429,17 +477,24 @@ footer{text-align:center;padding:2rem;font-size:.73rem;color:var(--text-3);borde
           <tr class="rv-move"><td>07:00</td><td><b>이천 인트라다 호텔</b> 출발 (5인 전원)</td><td>–</td><td>–</td><td class="fc-na">–</td><td class="fc-na">–</td><td>영동고속도로→중부내륙고속도로 이용 / 하이패스 확인</td></tr>
           <tr class="rv-meal"><td>~08:30</td><td><b>충주 or 문경 휴게소</b> — 아침 <span class="b b-simple">간단</span></td><td>약 1.5시간</td><td>24시간</td><td class="fc-na">–</td><td><span class="fc">15,000원</span><small class="sub">인당 3,000</small></td><td>편의점 김밥·삼각김밥·컵라면 / 약 30분 정차</td></tr>
           <tr class="rv-move"><td>~10:00</td><td><b>경주IC</b> 도착</td><td>약 1.5시간</td><td>–</td><td class="fc-na">–</td><td class="fc-na">–</td><td>이천→경주 총 주행 약 250km · 약 3시간</td></tr>
-          <tr class="rv-sight"><td>10:15~11:15</td><td><b>경주 공원묘원</b> — 산소 참배</td><td>IC에서 약 15분</td><td>일출~일몰</td><td class="fc-free">무료</td><td class="fc-na">–</td><td>성묘 약 30~60분 / 제수는 전날 준비 권장</td></tr>
-          <tr class="rv-move"><td>~11:45</td><td> 경주 시내(황남동) 이동</td><td>약 15~20분</td><td>–</td><td class="fc-na">–</td><td class="fc-na">–</td><td></td></tr>
-          <tr class="rv-meal"><td>12:00~13:20</td><td><b>점심 — 황남 돼지국밥</b> <span class="b b-proper">★ 제대로 한식</span></td><td>도착 즉시</td><td>07:00~21:00</td><td class="fc-na">–</td><td><span class="fc">60,000원</span><small class="sub">인당 12,000</small></td><td>경주 대표 음식 / 뼈해장국 추가 가능</td></tr>
-          <tr class="rv-sight"><td>13:30~15:00</td><td> <b class="spot-link" onclick="openSpot('daereungwon')">대릉원</b> (천마총) <span class="b b-paid">유료</span> <span class="b-must">필수</span></td><td>도보 5분</td><td>09:00~22:00</td><td><span class="fc">15,000원</span><small class="sub">인당 3,000</small></td><td class="fc-na">–</td><td>신라 고분군 / 천마도 실물 전시 / 약 1.5시간</td></tr>
-          <tr class="rv-sight"><td>15:00~16:30</td><td> <b class="spot-link" onclick="openSpot('cheomseongdae')">첨성대 · 계림 · 반월성</b> <span class="b b-free">무료</span> <span class="b-must">필수</span></td><td>도보 10분</td><td>09:00~22:00</td><td class="fc-free">무료</td><td class="fc-na">–</td><td>첨성대→계림(신라 김씨 발상 숲, 도보 5분, 필수 포토스팟)→반월성 연속 산책</td></tr>
-          <tr class="rv-sight"><td>16:30~17:30</td><td> <b class="spot-link" onclick="openSpot('hwanglidangil')">황리단길</b> <span class="b b-free">무료</span></td><td>도보 5분</td><td>상점마다 상이</td><td class="fc-free">무료</td><td class="fc-na">–</td><td>카페 · 기념품 · 황남빵 · 아이스크림</td></tr>
-          <tr class="rv-sleep"><td>17:30</td><td><b>체크인 — 바람곳 게스트하우스</b></td><td>차 약 10분</td><td>체크인 15:00~</td><td class="fc-na">–</td><td class="fc-na">–</td><td>짐 정리 · 야경 전 휴식</td></tr>
-          <tr class="rv-meal"><td>19:00~20:00</td><td><b>저녁 — 황리단길 간단식</b> <span class="b b-simple">간단</span></td><td>도보</td><td>–</td><td class="fc-na">–</td><td><span class="fc">25,000원</span><small class="sub">인당 5,000</small></td><td>분식 · 편의점 / 이동 긴 첫날, 가볍게 마무리</td></tr>
-          <tr class="rv-sleep"><td>20:30</td><td> 숙소 복귀 · 자유 휴식</td><td>도보·차</td><td>–</td><td class="fc-na">–</td><td class="fc-na">–</td><td>장거리 운전 후 첫날 — 이른 취침 권장 / 동궁 야경은 내일 저녁</td></tr>
+          <tr class="rv-sight"><td>10:15~10:45</td><td><b>경주 공원묘원</b> — 산소 참배</td><td>IC에서 약 15분</td><td>일출~일몰</td><td class="fc-free">무료</td><td class="fc-na">–</td><td>강동면 소재 / 성묘 약 30분</td></tr>
+          <tr class="rv-move"><td>~11:05</td><td>강동면 이동</td><td>약 20분</td><td>–</td><td class="fc-na">–</td><td class="fc-na">–</td><td>공원묘원→양동마을 약 11.3km</td></tr>
+          <tr class="rv-sight"><td>11:05~11:55</td><td> <b class="spot-link" onclick="openSpot('yangdong')">양동마을</b> <span class="b b-paid">유료</span></td><td>차 약 20분</td><td>09:00~18:00</td><td><span class="fc">13,500원</span><small class="sub">어른 4,000×2·청소년 2,000×2·어린이 1,500×1</small></td><td class="fc-na">–</td><td>유네스코 세계유산 / 조선 씨족마을 / 성묘 동선상 함께 방문(3일차 왕복 45km 절약)</td></tr>
+          <tr class="rv-sight"><td>11:55~12:25</td><td><b>옥산서원</b> <span class="b b-free">무료</span></td><td>차 약 20분</td><td>09:00~18:00</td><td class="fc-free">무료</td><td class="fc-na">–</td><td>양동마을 인근 약 10.9km / 이언적 서원</td></tr>
+          <tr class="rv-move"><td>~13:05</td><td>동천동(황성동) 이동</td><td>약 40분</td><td>–</td><td class="fc-na">–</td><td class="fc-na">–</td><td>옥산서원→황성초등학교 약 24.7km</td></tr>
+          <tr class="rv-sight"><td>13:05~13:35</td><td><b>황성초등학교</b> 방문</td><td>도보</td><td>–</td><td class="fc-free">무료</td><td class="fc-na">–</td><td>가족 추억 탐방 / 교정 산책</td></tr>
+          <tr class="rv-meal"><td>13:35~14:30</td><td><b>점심 — 시골여행</b> <span class="b b-proper">★ 동천동 손칼국수</span></td><td>도보</td><td>–</td><td class="fc-na">–</td><td><span class="fc">40,000원</span><small class="sub">인당 8,000</small></td><td>경주 동천동 손칼국수 맛집</td></tr>
+          <tr class="rv-sight"><td>14:30~15:15</td><td><b>아빠 생가</b> 방문 · 축구</td><td>도보</td><td>–</td><td class="fc-free">무료</td><td class="fc-na">–</td><td>경주시 동천동 758-23 / 가족 추억 장소 · 축구</td></tr>
+          <tr class="rv-sight"><td>15:15~15:40</td><td><b>경주고등학교</b> 방문</td><td>차 약 5분</td><td>–</td><td class="fc-free">무료</td><td class="fc-na">–</td><td>경주 고등학교 방문 · 교정 산책 / 숙소(원효로)와 도보 2.5km 이내</td></tr>
+          <tr class="rv-move"><td>~16:00</td><td>황남동(시내) 이동</td><td>약 15분</td><td>–</td><td class="fc-na">–</td><td class="fc-na">–</td><td></td></tr>
+          <tr class="rv-sight"><td>16:00~17:15</td><td> <b class="spot-link" onclick="openSpot('daereungwon')">대릉원</b> (천마총) <span class="b b-paid">천마총 유료</span> <span class="b-must">필수</span></td><td>도보 5분</td><td>09:00~22:00</td><td><span class="fc">11,000원</span><small class="sub">어른 3,000×2·청소년 2,000×2·어린이 1,000×1</small></td><td class="fc-na">–</td><td>대릉원 부지 자체는 무료(2023.5~) / 천마총 내부 관람만 유료 / 약 1.25시간</td></tr>
+          <tr class="rv-sight"><td>16:00~17:15</td><td> <b class="spot-link" onclick="openSpot('cheomseongdae')">첨성대 · 계림 · 반월성</b> <span class="b b-free">무료</span> <span class="b-must">필수</span></td><td>도보 10분</td><td>09:00~22:00</td><td class="fc-free">무료</td><td class="fc-na">–</td><td>첨성대→계림(신라 김씨 발상 숲, 도보 5분, 필수 포토스팟)→반월성 연속 산책</td></tr>
+          <tr class="rv-sight"><td>17:15~18:15</td><td> <b class="spot-link" onclick="openSpot('hwanglidangil')">황리단길</b> <span class="b b-free">무료</span></td><td>도보 5분</td><td>상점마다 상이</td><td class="fc-free">무료</td><td class="fc-na">–</td><td>카페 · 기념품 · 황남빵 · 아이스크림</td></tr>
+          <tr class="rv-sleep"><td>19:00</td><td><b>체크인 — 바람곳 게스트하우스</b></td><td>차 약 10분</td><td>체크인 15:00~</td><td class="fc-na">–</td><td class="fc-na">–</td><td>양동마을·옥산서원 추가로 체크인 예상시간이 늦춰짐 / 짐 정리 후 저녁</td></tr>
+          <tr class="rv-meal"><td>19:30~20:30</td><td><b>저녁 — 황리단길 간단식</b> <span class="b b-simple">간단</span></td><td>도보</td><td>–</td><td class="fc-na">–</td><td><span class="fc">25,000원</span><small class="sub">인당 5,000</small></td><td>분식 · 편의점 / 이동 긴 첫날, 가볍게 마무리</td></tr>
+          <tr class="rv-sleep"><td>21:00</td><td> 숙소 복귀 · 자유 휴식</td><td>도보·차</td><td>–</td><td class="fc-na">–</td><td class="fc-na">–</td><td>장거리 운전 후 첫날 — 이른 취침 권장 / 동궁 야경은 내일 저녁</td></tr>
         </tbody>
-        <tfoot><tr><td colspan="4">1일차 소계</td><td><span class="fc">15,000원</span></td><td><span class="fc">100,000원</span></td><td style="color:var(--text-2);font-weight:400;font-size:.76rem">이천→경주 약 3시간 / 동궁 야경은 2일차로 이동</td></tr></tfoot>
+        <tfoot><tr><td colspan="4">1일차 소계</td><td><span class="fc">24,500원</span></td><td><span class="fc">80,000원</span></td><td style="color:var(--text-2);font-weight:400;font-size:.76rem">이천→경주 약 3시간 + 양동마을·옥산서원 포함 시내 이동 / 입장료는 성인2·청소년2·어린이1 연령별 요금 반영</td></tr></tfoot>
       </table>
     </div>
   </div>
@@ -447,7 +502,7 @@ footer{text-align:center;padding:2rem;font-size:.73rem;color:var(--text-3);borde
   <!-- ── A Day 2 ── -->
   <div class="day-panel" id="dA-A2">
     <div class="dhead">
-      <div class="dhead-row"><span class="day-num">2</span><h2>9월 25일 (목요일) — 불국사 · 석굴암 · 국립경주박물관</h2></div>
+      <div class="dhead-row"><span class="day-num">2</span><h2>9월 25일 (금요일) — 불국사 · 석굴암 · 국립경주박물관</h2></div>
       <div class="dhead-sub">
         <span>불국사 09:00</span>
         <span>석굴암 11:00</span>
@@ -461,16 +516,16 @@ footer{text-align:center;padding:2rem;font-size:.73rem;color:var(--text-3);borde
         <thead><tr><th style="width:90px">시간</th><th>장소 / 활동</th><th style="width:90px">이동시간</th><th style="width:120px">운영시간</th><th style="width:100px">입장료(5인)</th><th style="width:105px">식비(5인)</th><th>비고 · 팁</th></tr></thead>
         <tbody>
           <tr class="rv-meal"><td>07:30~08:30</td><td><b>아침 — 황리단길 카페</b> <span class="b b-simple">간단</span></td><td>도보</td><td>08:00~</td><td class="fc-na">–</td><td><span class="fc">25,000원</span><small class="sub">인당 5,000</small></td><td>빵 · 음료 / 황리단길 카페 다수</td></tr>
-          <tr class="rv-sight"><td>09:00~11:00</td><td> <b class="spot-link" onclick="openSpot('bulguksa')">불국사</b> <span class="b b-paid">유료</span> <span class="b-must">필수</span></td><td>차 약 25분</td><td>07:00~18:00</td><td><span class="fc">30,000원</span><small class="sub">인당 6,000</small></td><td class="fc-na">–</td><td>유네스코 세계유산 / 다보탑·석가탑 / 약 2시간</td></tr>
-          <tr class="rv-sight"><td>11:00~12:30</td><td> <b class="spot-link" onclick="openSpot('seokguram')">석굴암</b> <span class="b b-paid">유료</span> <span class="b-must">필수</span></td><td>셔틀 약 15분<br>(불국사 매표소)</td><td>07:00~17:30</td><td><span class="fc">30,000원</span><small class="sub">인당 6,000</small></td><td class="fc-na">–</td><td>불국사와 별도 티켓 / 셔틀 08:00~17:00</td></tr>
+          <tr class="rv-sight"><td>09:00~11:00</td><td> <b class="spot-link" onclick="openSpot('bulguksa')">불국사</b> <span class="b b-free">무료</span> <span class="b-must">필수</span></td><td>차 약 25분</td><td>07:00~18:00</td><td class="fc-free">무료</td><td class="fc-na">–</td><td>유네스코 세계유산 / 다보탑·석가탑 / 2023.5.4~ 전국 사찰 문화재관람료 폐지로 무료 전환 / 약 2시간</td></tr>
+          <tr class="rv-sight"><td>11:00~12:30</td><td> <b class="spot-link" onclick="openSpot('seokguram')">석굴암</b> <span class="b b-free">무료</span> <span class="b-must">필수</span></td><td>셔틀 약 15분<br>(불국사 매표소)</td><td>07:00~17:30</td><td class="fc-free">무료</td><td class="fc-na">–</td><td>불국사와 동일하게 2023.5.4~ 무료 전환 / 셔틀 08:00~17:00 (셔틀 요금은 별도)</td></tr>
           <tr class="rv-meal"><td>12:30~13:30</td><td><b>점심 — 불국사 인근</b> <span class="b b-simple">간단</span></td><td>차 약 5분</td><td>–</td><td class="fc-na">–</td><td><span class="fc">35,000원</span><small class="sub">인당 7,000</small></td><td>산채비빔밥 · 칼국수 / 불국사 앞 식당가</td></tr>
           <tr class="rv-sight"><td>14:00~16:00</td><td> <b class="spot-link" onclick="openSpot('museum')">국립경주박물관</b> <span class="b b-free">무료</span> <span class="b-must">필수</span></td><td>차 약 25분</td><td>10:00~18:00<br>(토·일 19:00)</td><td class="fc-free">무료</td><td class="fc-na">–</td><td>에어컨 完備 / 성덕대왕신종(에밀레종) / 약 2시간</td></tr>
           <tr class="rv-sight"><td>16:00~17:30</td><td><b>교촌마을 &amp; 최부잣집</b> <span class="b b-free">무료</span></td><td>차 약 10분</td><td>항시 개방</td><td class="fc-free">무료</td><td class="fc-na">–</td><td>최씨 고택 외부 관람 (황리단길 Day 1에 방문 완료) / 전통 골목 산책 / 카페 휴식</td></tr>
           <tr class="rv-meal"><td>18:00~19:30</td><td><b>저녁 — 경주 쌈밥·솥밥</b> <span class="b b-proper">★ 제대로 한식</span></td><td>도보·차</td><td>11:00~21:00</td><td class="fc-na">–</td><td><span class="fc">65,000원</span><small class="sub">인당 13,000</small></td><td>경주 쌈밥 or 돌솥비빔밥 전문점 / 네이버·카카오 예약 권장</td></tr>
-          <tr class="rv-sight"><td>20:00~21:30</td><td> <b class="spot-link" onclick="openSpot('donggunggwolji')">동궁과 월지</b> 야경 <span class="b b-paid">유료</span> <span class="b-must">필수</span></td><td>차 약 10분</td><td>09:00~22:00<br>(입장 21:30)</td><td><span class="fc">15,000원</span><small class="sub">인당 3,000</small></td><td class="fc-na">–</td><td>경주 최고 야경 명소 ★★★ / 저녁 식사 후 여유 있게 감상 / 20:00 입장 권장</td></tr>
+          <tr class="rv-sight"><td>20:00~21:30</td><td> <b class="spot-link" onclick="openSpot('donggunggwolji')">동궁과 월지</b> 야경 <span class="b b-paid">유료</span> <span class="b-must">필수</span></td><td>차 약 10분</td><td>09:00~22:00<br>(입장 21:30)</td><td><span class="fc">11,000원</span><small class="sub">어른 3,000×2·청소년 2,000×2·어린이 1,000×1</small></td><td class="fc-na">–</td><td>경주 최고 야경 명소 ★★★ / 저녁 식사 후 여유 있게 감상 / 20:00 입장 권장</td></tr>
           <tr class="rv-sleep"><td>22:00</td><td> 숙소 복귀 · 휴식</td><td>차 약 10분</td><td>–</td><td class="fc-na">–</td><td class="fc-na">–</td><td></td></tr>
         </tbody>
-        <tfoot><tr><td colspan="4">2일차 소계</td><td><span class="fc">75,000원</span></td><td><span class="fc">125,000원</span></td><td style="color:var(--text-2);font-weight:400;font-size:.76rem">이동거리 총 약 70km / 동궁 야경 포함</td></tr></tfoot>
+        <tfoot><tr><td colspan="4">2일차 소계</td><td><span class="fc">11,000원</span></td><td><span class="fc">125,000원</span></td><td style="color:var(--text-2);font-weight:400;font-size:.76rem">이동거리 총 약 70km / 불국사·석굴암 무료 전환으로 입장료 대폭 감소</td></tr></tfoot>
       </table>
     </div>
   </div>
@@ -478,12 +533,13 @@ footer{text-align:center;padding:2rem;font-size:.73rem;color:var(--text-3);borde
   <!-- ── A Day 3 ── -->
   <div class="day-panel" id="dA-A3">
     <div class="dhead">
-      <div class="dhead-row"><span class="day-num">3</span><h2>9월 26일 (금요일) — 양동마을 · 체크아웃 · 귀가</h2></div>
+      <div class="dhead-row"><span class="day-num">3</span><h2>9월 26일 (토요일) — 포석정 · 체크아웃 · 귀가</h2></div>
       <div class="dhead-sub">
-        <span>양동마을 09:00</span>
-        <span>체크아웃 11:00</span>
+        <span>포석정 09:00 (숙소 인근)</span>
+        <span>체크아웃 10:30</span>
         <span>경주 출발 13:00</span>
         <span>인천 도착 ~17:00</span>
+        <span style="color:var(--amber)">양동마을·옥산서원은 1일차로 이동 — 3일차 이동거리 대폭 감소</span>
       </div>
     </div>
     <div class="twrap">
@@ -491,13 +547,13 @@ footer{text-align:center;padding:2rem;font-size:.73rem;color:var(--text-3);borde
         <thead><tr><th style="width:90px">시간</th><th>장소 / 활동</th><th style="width:90px">이동시간</th><th style="width:120px">운영시간</th><th style="width:100px">입장료(5인)</th><th style="width:105px">식비(5인)</th><th>비고 · 팁</th></tr></thead>
         <tbody>
           <tr class="rv-meal"><td>07:30~08:30</td><td><b>아침 — 간단식</b> <span class="b b-simple">간단</span></td><td>–</td><td>–</td><td class="fc-na">–</td><td><span class="fc">15,000원</span><small class="sub">인당 3,000</small></td><td>편의점 / 짐 정리 병행</td></tr>
-          <tr class="rv-sight"><td>09:00~11:00</td><td> <b class="spot-link" onclick="openSpot('yangdong')">양동마을</b> <span class="b b-paid">유료</span></td><td>차 약 25분</td><td>09:00~18:00</td><td><span class="fc">20,000원</span><small class="sub">인당 4,000</small></td><td class="fc-na">–</td><td>유네스코 세계유산 / 조선 씨족마을 / 약 1.5~2시간</td></tr>
-          <tr class="rv-sleep"><td>11:00~11:30</td><td> 숙소 복귀 · <b>체크아웃</b></td><td>차 약 25분</td><td>체크아웃 11:00</td><td class="fc-na">–</td><td class="fc-na">–</td><td>짐 차에 싣고 출발 준비</td></tr>
+          <tr class="rv-sight"><td>09:00~10:00</td><td><b>포석정</b> <span class="b b-paid">유료</span></td><td>차 약 10분</td><td>09:00~18:00</td><td><span class="fc">6,500원</span><small class="sub">어른 2,000×2·청소년 1,000×2·어린이 500×1</small></td><td class="fc-na">–</td><td>사적 제1호 / 숙소에서 4.7km · 대릉원에서도 4.5km로 가까움 / 약 30~40분</td></tr>
+          <tr class="rv-sleep"><td>10:00~10:30</td><td> 숙소 복귀 · <b>체크아웃</b></td><td>차 약 10분</td><td>체크아웃 11:00 이전</td><td class="fc-na">–</td><td class="fc-na">–</td><td>짐 차에 싣고 출발 준비</td></tr>
           <tr class="rv-meal"><td>12:00~13:00</td><td><b>점심 — 귀가 전 간단식</b> <span class="b b-simple">간단</span></td><td>–</td><td>–</td><td class="fc-na">–</td><td><span class="fc">20,000원</span><small class="sub">인당 4,000</small></td><td>경주 시내 분식 or 고속도로 휴게소</td></tr>
           <tr class="rv-move"><td>13:00</td><td><b>경주 출발</b> — 귀가</td><td>–</td><td>–</td><td class="fc-na">–</td><td class="fc-na">–</td><td>경부고속도로 이용</td></tr>
           <tr class="rv-move"><td>~17:00</td><td><b>인천 서구</b> 예미지 더시그너스 도착</td><td>약 4시간</td><td>–</td><td class="fc-na">–</td><td class="fc-na">–</td><td>금요일 저녁 수원 부근 정체 예상</td></tr>
         </tbody>
-        <tfoot><tr><td colspan="4">3일차 소계</td><td><span class="fc">20,000원</span></td><td><span class="fc">35,000원</span></td><td style="color:var(--text-2);font-weight:400;font-size:.76rem">귀가 이동 약 4시간</td></tr></tfoot>
+        <tfoot><tr><td colspan="4">3일차 소계</td><td><span class="fc">6,500원</span></td><td><span class="fc">35,000원</span></td><td style="color:var(--text-2);font-weight:400;font-size:.76rem">포석정이 숙소 인근이라 이동거리 대폭 감소 / 귀가 이동 약 4시간</td></tr></tfoot>
       </table>
     </div>
   </div>
@@ -506,16 +562,16 @@ footer{text-align:center;padding:2rem;font-size:.73rem;color:var(--text-3);borde
   <div class="day-panel" id="dA-AB">
     <div class="sec-title"> 플랜 A — 2박 3일 예산 정리</div>
     <div class="b-cards">
-      <div class="bcard"><div class="bl">총 식비 (5인)</div><div class="bv ok">255,000원</div></div>
-      <div class="bcard"><div class="bl">총 입장료 (5인)</div><div class="bv">110,000원</div></div>
-      <div class="bcard"><div class="bl">1인 식비</div><div class="bv">51,000원</div></div>
-      <div class="bcard"><div class="bl">1인 입장료</div><div class="bv">22,000원</div></div>
+      <div class="bcard"><div class="bl">총 식비 (5인)</div><div class="bv ok">240,000원</div></div>
+      <div class="bcard"><div class="bl">총 입장료 (5인)</div><div class="bv ok">42,000원</div></div>
+      <div class="bcard"><div class="bl">1인 식비 평균</div><div class="bv">48,000원</div></div>
+      <div class="bcard"><div class="bl">1인 입장료 평균</div><div class="bv">8,400원</div></div>
       <div class="bcard"><div class="bl">제대로 한식</div><div class="bv warn">2회 ★</div></div>
       <div class="bcard"><div class="bl">주유비 별도</div><div class="bv note">약 12만원</div></div>
     </div>
     <div class="budget-bar-wrap">
-      <div class="budget-bar-label"><span>식비 사용률</span><span>255,000 / 300,000원 (85%)</span></div>
-      <div class="budget-bar-track"><div class="budget-bar-fill" style="width:85%"></div></div>
+      <div class="budget-bar-label"><span>식비 사용률</span><span>240,000 / 300,000원 (80%)</span></div>
+      <div class="budget-bar-track"><div class="budget-bar-fill" style="width:80%"></div></div>
     </div>
 
     <div class="sec-title"> 식비 상세 (5인 기준)</div>
@@ -524,9 +580,9 @@ footer{text-align:center;padding:2rem;font-size:.73rem;color:var(--text-3);borde
         <thead><tr><th>날짜</th><th>끼니</th><th>내용</th><th>1인</th><th style="text-align:right">5인</th></tr></thead>
         <tbody>
           <tr><td>9/24</td><td>아침</td><td>안성 휴게소 편의점</td><td>3,000원</td><td class="amt">15,000원</td></tr>
-          <tr class="proper"><td>9/24</td><td><b>점심 ★</b></td><td>황남 돼지국밥 (제대로 한식)</td><td>12,000원</td><td class="amt">60,000원</td></tr>
+          <tr><td>9/24</td><td>점심</td><td>시골여행 · 동천동 손칼국수</td><td>8,000원</td><td class="amt">40,000원</td></tr>
           <tr><td>9/24</td><td>저녁</td><td>황리단길 분식·편의점</td><td>5,000원</td><td class="amt">25,000원</td></tr>
-          <tr class="sub"><td colspan="4">1일차 소계</td><td class="amt">100,000원</td></tr>
+          <tr class="sub"><td colspan="4">1일차 소계 (식비)</td><td class="amt">80,000원</td></tr>
           <tr><td>9/25</td><td>아침</td><td>황리단길 카페 빵·음료</td><td>5,000원</td><td class="amt">25,000원</td></tr>
           <tr><td>9/25</td><td>점심</td><td>불국사 인근 산채비빔밥</td><td>7,000원</td><td class="amt">35,000원</td></tr>
           <tr class="proper"><td>9/25</td><td><b>저녁 ★</b></td><td>경주 쌈밥·솥밥 (제대로 한식)</td><td>13,000원</td><td class="amt">65,000원</td></tr>
@@ -535,34 +591,41 @@ footer{text-align:center;padding:2rem;font-size:.73rem;color:var(--text-3);borde
           <tr><td>9/26</td><td>점심</td><td>분식·휴게소</td><td>4,000원</td><td class="amt">20,000원</td></tr>
           <tr class="sub"><td colspan="4">3일차 소계</td><td class="amt">35,000원</td></tr>
         </tbody>
-        <tfoot><tr><td colspan="4">합계</td><td class="amt ok" style="font-size:.95rem">255,000원</td></tr></tfoot>
+        <tfoot><tr><td colspan="4">합계</td><td class="amt ok" style="font-size:.95rem">240,000원</td></tr></tfoot>
       </table>
     </div>
 
-    <div class="sec-title sec-gap"> 입장료 상세 (5인 기준)</div>
+    <div class="sec-title sec-gap"> 입장료 상세 — 연령별 (성인 2 · 청소년 2 · 어린이 1, 총 5인)</div>
     <div class="twrap2">
       <table class="mt">
-        <thead><tr><th>날짜</th><th>장소</th><th>운영시간</th><th>1인</th><th style="text-align:right">5인</th></tr></thead>
+        <thead><tr><th>날짜</th><th>장소</th><th>성인 2인</th><th>청소년 2인</th><th>어린이 1인</th><th style="text-align:right">5인 합계</th></tr></thead>
         <tbody>
-          <tr><td>9/24</td><td>대릉원</td><td>09:00~22:00</td><td>3,000원</td><td class="amt">15,000원</td></tr>
-          <tr><td>9/25</td><td>불국사</td><td>07:00~18:00</td><td>6,000원</td><td class="amt">30,000원</td></tr>
-          <tr><td>9/25</td><td>석굴암</td><td>07:00~17:30</td><td>6,000원</td><td class="amt">30,000원</td></tr>
-          <tr><td>9/25</td><td>동궁과 월지 (야경)</td><td>09:00~22:00</td><td>3,000원</td><td class="amt">15,000원</td></tr>
-          <tr><td>9/26</td><td>양동마을</td><td>09:00~18:00</td><td>4,000원</td><td class="amt">20,000원</td></tr>
-          <tr><td colspan="2" style="color:var(--text-2)">첨성대·계림·교촌마을·국립경주박물관</td><td colspan="2">무료</td><td class="amt ok">0원</td></tr>
+          <tr><td>9/24</td><td>양동마을</td><td>4,000×2=8,000</td><td>2,000×2=4,000</td><td>1,500×1=1,500</td><td class="amt">13,500원</td></tr>
+          <tr><td>9/24</td><td>천마총 (대릉원 부지 자체는 무료)</td><td>3,000×2=6,000</td><td>2,000×2=4,000</td><td>1,000×1=1,000</td><td class="amt">11,000원</td></tr>
+          <tr><td>9/25</td><td>불국사</td><td colspan="3" style="color:var(--jade)">2023.5.4~ 전국 사찰 무료 전환</td><td class="amt ok">0원</td></tr>
+          <tr><td>9/25</td><td>석굴암</td><td colspan="3" style="color:var(--jade)">불국사와 동일 정책, 무료 전환</td><td class="amt ok">0원</td></tr>
+          <tr><td>9/25</td><td>동궁과 월지 (야경)</td><td>3,000×2=6,000</td><td>2,000×2=4,000</td><td>1,000×1=1,000</td><td class="amt">11,000원</td></tr>
+          <tr><td>9/26</td><td>포석정</td><td>2,000×2=4,000</td><td>1,000×2=2,000</td><td>500×1=500</td><td class="amt">6,500원</td></tr>
+          <tr><td colspan="2" style="color:var(--text-2)">옥산서원·첨성대·계림·반월성·교촌마을·국립경주박물관·대릉원(부지)·황리단길</td><td colspan="3">전 연령 무료</td><td class="amt ok">0원</td></tr>
         </tbody>
-        <tfoot><tr><td colspan="4">합계</td><td class="amt" style="font-size:.95rem">110,000원</td></tr></tfoot>
+        <tfoot><tr><td colspan="5">합계</td><td class="amt" style="font-size:.95rem">42,000원</td></tr></tfoot>
       </table>
     </div>
 
     <div class="note">
-      <strong>안내 사항</strong>
+      <strong>안내 사항 — 요금 산정 기준 (2026 추석 · 자녀 나이 반영)</strong>
       <ul>
-        <li>★ 표시는 제대로 된 한식 (1일차 점심 황남국밥, 2일차 저녁 쌈밥)</li>
+        <li>★ 표시는 제대로 된 한식 (1일차 점심 손칼국수, 2일차 저녁 쌈밥)</li>
+        <li>연령 구분: 성인(아빠·엄마), 청소년 13~18세(고1·중1 두 딸 모두 해당), 어린이 7~12세(초4 막내딸 해당) — 시설별 청소년·어린이 요금을 각각 적용해 재계산함. 기존에는 전 연령 성인 요금으로 잘못 합산되어 있었음</li>
+        <li><b>불국사·석굴암은 2023년 5월 4일부터 문화재보호법 개정으로 전국 사찰 문화재관람료가 폐지되어 완전 무료</b> — 기존 표에 남아있던 각 30,000원(5인)은 삭제. 가장 큰 절감 요인</li>
+        <li>대릉원 부지 자체는 2023년부터 무료지만, 내부 <b>천마총</b> 전시관 관람만 별도 유료 (성인 3,000·청소년 2,000·어린이 1,000)</li>
+        <li><b>추석 연휴 무료개방 여부</b>: 2026년 추석 연휴(9/24~9/26)에 국가유산청이 무료 개방하는 곳은 서울 4대궁(경복궁·창덕궁·창경궁·덕수궁)·종묘·조선왕릉에 한정됨. 경주의 천마총·동궁과 월지·양동마을·포석정은 경주시(경주시설관리공단)가 별도 관리하는 시설로, 추석 특별 무료개방 정책이 확인되지 않아 평시 요금으로 계산함. 방문 전 경주시설관리공단(054-750-8500) 확인 권장</li>
+        <li><b>다자녀가정 할인</b>: 천마총·동궁과 월지(경주시설관리공단), 양동마을, 포석정의 공식 요금 안내 어디에도 다자녀가정 전용 할인 항목이 명시되어 있지 않음(국가유공자·장애인·기초생활수급자·경주시민 할인만 규정). 지자체 다자녀행복카드가 일부 공공시설에 적용되는 사례가 있으므로 매표소에서 가족관계증명서를 지참해 직접 문의해볼 가치는 있으나, 확정 할인으로 예산에 반영하지는 않음</li>
         <li>주유비 별도: 왕복 약 700km / 연비 12km/L 기준 약 120,000~130,000원</li>
-        <li>고속도로 통행료: 왕복 약 40,000~50,000원 별도</li>
-        <li>입장료는 성인 기준 / 경로·청소년·어린이 할인 별도 확인 필요</li>
-        <li>양동마을: 경주시 강동면 소재, 시내에서 차 약 25분 / 체크아웃과 병행 시 시간 조율 필요</li>
+        <li>고속도로 통행료: 왕복 약 40,000~50,000원 별도 (추석 연휴 기간은 고속도로 통행료 면제 적용될 수 있음 — 국토부 공지 확인 권장)</li>
+        <li>양동마을·옥산서원: 성묘 장소(강동면)와 가까워 1일차 성묘 직후 방문으로 배치 — 3일차 별도 왕복(약 45km) 불필요</li>
+        <li>포석정: 숙소·대릉원에서 약 4.5~4.7km로 가까워 체크아웃 당일 아침에 가볍게 방문 / 무료가 아닌 유료 시설이므로 주의</li>
+        <li>1일차는 이동 구간이 늘어 체크인이 19:00경으로 늦어질 수 있음 — 성묘·양동마을 관람 시간을 여유 있게 조율 권장</li>
       </ul>
     </div>
   </div>
@@ -579,27 +642,27 @@ footer{text-align:center;padding:2rem;font-size:.73rem;color:var(--text-3);borde
   </div>
 
   <div class="ov">
-    <div class="ov-card"><div class="lbl">일정</div><div class="val">9/25(목) – 9/28(일)</div></div>
+    <div class="ov-card"><div class="lbl">일정</div><div class="val">9/24(목) – 9/27(일)</div></div>
     <div class="ov-card"><div class="lbl">숙박</div><div class="val">3박</div></div>
     <div class="ov-card"><div class="lbl">예상 식비</div><div class="val hi">300,000원</div></div>
-    <div class="ov-card"><div class="lbl">예상 입장료</div><div class="val hi">140,000원</div></div>
+    <div class="ov-card"><div class="lbl">예상 입장료</div><div class="val hi">35,500원</div></div>
     <div class="ov-card"><div class="lbl">제대로 한식</div><div class="val">2회 (★)</div></div>
-    <div class="ov-card"><div class="lbl">추가 관광</div><div class="val" style="font-size:.82rem">양동마을·골굴사·문무대왕릉·주상절리</div></div>
+    <div class="ov-card"><div class="lbl">추가 관광</div><div class="val" style="font-size:.82rem">양동마을·문무대왕릉·주상절리</div></div>
   </div>
 
   <div class="day-bar">
-    <button class="dtab" onclick="selDay('B','B0',this)">D-1 · 9/24 수</button>
-    <button class="dtab on" onclick="selDay('B','B1',this)">1일차 · 9/25</button>
-    <button class="dtab" onclick="selDay('B','B2',this)">2일차 · 9/26</button>
-    <button class="dtab" onclick="selDay('B','B3',this)">3일차 · 9/27</button>
-    <button class="dtab" onclick="selDay('B','B4',this)">4일차 · 9/28 (귀가)</button>
+    <button class="dtab" onclick="selDay('B','B0',this)">D-1 · 9/23 수</button>
+    <button class="dtab on" onclick="selDay('B','B1',this)">1일차 · 9/24</button>
+    <button class="dtab" onclick="selDay('B','B2',this)">2일차 · 9/25</button>
+    <button class="dtab" onclick="selDay('B','B3',this)">3일차 · 9/26</button>
+    <button class="dtab" onclick="selDay('B','B4',this)">4일차 · 9/27 (귀가)</button>
     <button class="dtab" onclick="selDay('B','BB',this)">예산 정리</button>
   </div>
 
   <!-- ── B Day 0 (D-1) ── -->
   <div class="day-panel" id="dB-B0">
     <div class="dhead">
-      <div class="dhead-row"><span class="day-num" style="background:var(--plum);font-size:.7rem">D-1</span><h2>9월 24일 (수요일) — 인천 → 이천 인트라다 호텔 이동 · 합류</h2></div>
+      <div class="dhead-row"><span class="day-num" style="background:var(--plum);font-size:.7rem">D-1</span><h2>9월 23일 (수요일) — 인천 → 이천 인트라다 호텔 이동 · 합류</h2></div>
       <div class="dhead-sub">
         <span>출발: 인천 서구 예미지 더시그너스 13:00</span>
         <span>공항철도 → 9호선 → 분당선 → 경강선</span>
@@ -612,18 +675,17 @@ footer{text-align:center;padding:2rem;font-size:.73rem;color:var(--text-3);borde
         <thead><tr><th style="width:90px">시간</th><th>장소 / 활동</th><th style="width:90px">이동시간</th><th style="width:120px">교통편</th><th style="width:120px">비용(4인)</th><th>비고 · 팁</th></tr></thead>
         <tbody>
           <tr class="rv-move"><td>13:00</td><td><b>인천 서구 예미지 더시그너스</b> 출발<br><small class="sub">엄마 + 세 딸 (4인) · 아빠는 이미 이천 대기 중</small></td><td>–</td><td>도보</td><td class="fc-na">–</td><td>짐 간소화 / 캐리어 1개씩 권장 / 전날 밤 미리 준비</td></tr>
-          <tr class="rv-move"><td>~13:20</td><td><b>버스</b> → 계양역 (공항철도역)</td><td>약 20분</td><td>마을버스/광역버스</td><td class="fc-na">교통카드</td><td>검암역 or 계양역 방면 버스 이용</td></tr>
+          <tr class="rv-move"><td>~13:20</td><td><b>버스</b> → 계양역 (공항철도역)</td><td>약 20분</td><td>마을버스/광역버스</td><td class="fc-na">교통카드</td><td>계양역 방면 버스 이용</td></tr>
           <tr class="rv-move"><td>~13:30</td><td><b>공항철도</b> 탑승 → 서울역 방향</td><td>–</td><td>공항철도(일반)</td><td><span class="fc">16,600원</span><small class="sub">4인 × 4,150원</small></td><td>일반열차 계양→서울역 약 35분</td></tr>
           <tr class="rv-move"><td>~14:10</td><td><b>서울역</b> → 지하철 2호선 방향 환승</td><td>약 40분</td><td>지하철 환승</td><td class="fc-na">교통카드</td><td>서울역→신도림→강남역 (2호선) 약 50분</td></tr>
           <tr class="rv-move"><td>~15:10</td><td><b>강남역</b> → 신분당선 → 판교역</td><td>약 55분</td><td>지하철+신분당선</td><td><span class="fc">11,600원</span><small class="sub">4인 × 2,900원</small></td><td>신분당선 판교역 하차 / 약 15분</td></tr>
           <tr class="rv-move"><td>~15:30</td><td><b>판교역</b> → 경강선 탑승 (여주 방향)</td><td>–</td><td>경강선</td><td><span class="fc">9,200원</span><small class="sub">4인 × 2,300원</small></td><td>경강선 판교→부발역 약 50분</td></tr>
-          <tr class="rv-move"><td>~16:20</td><td><b>부발역</b> 도착</td><td>약 50분</td><td>경강선</td><td class="fc-na">–</td><td>이천시 부발읍 소재 / 역에서 호텔까지 택시 필요</td></tr>
-          <tr class="rv-move"><td>~16:35</td><td><b>택시</b> → 이천 인트라다 호텔</td><td>약 10~15분</td><td>택시</td><td><span class="fc">약 8,000원</span><small class="sub">1대 기준</small></td><td>카카오택시 사전 호출 권장 / 역에서 약 7km</td></tr>
-          <tr class="rv-sleep"><td>~17:00</td><td><b>이천 인트라다 호텔</b> 도착 · 아빠와 합류 · 체크인</td><td>–</td><td>–</td><td class="fc-na">숙박비 별도</td><td>아빠는 이미 체크인 완료 / 온천·수영장 시설 확인</td></tr>
-          <tr class="rv-meal"><td>18:30~19:30</td><td><b>저녁 — 이천 쌀밥 정식</b> <span class="b b-proper">★ 이천 명물</span></td><td>차 10분</td><td>–</td><td><span class="fc">60,000원~</span><small class="sub">인당 12,000원~</small></td><td>이천 도예촌·쌀밥 거리 / 임금님표 이천쌀 음식</td></tr>
+          <tr class="rv-move"><td>~16:20</td><td><b>부발역</b> 도착 · 도보 이동 시작</td><td>약 50분</td><td>경강선</td><td class="fc-na">–</td><td>이천시 부발읍 소재</td></tr>
+          <tr class="rv-sleep"><td>~16:40</td><td><b>이천 인트라다 호텔</b> 도착 · 아빠와 합류 · 체크인</td><td>–</td><td>–</td><td class="fc-na">숙박비 별도</td><td>아빠는 이미 체크인 완료 / 온천·수영장 시설 확인</td></tr>
+          <tr class="rv-meal"><td>18:30~19:30</td><td><b>저녁 — 털보네보쌈</b> <span class="b b-proper">★ 이천 명물</span></td><td>차 10분</td><td>–</td><td><span class="fc">55,000원~</span><small class="sub">인당 11,000원~</small></td><td>이천 보쌈 맛집 / 예약 권장</td></tr>
           <tr class="rv-sleep"><td>20:30</td><td> 호텔 복귀 · 휴식 · 취침</td><td>–</td><td>–</td><td class="fc-na">–</td><td>다음날 07:00 경주 출발 준비 / 짐 차에 미리 적재</td></tr>
         </tbody>
-        <tfoot><tr><td colspan="3">총 이동시간</td><td colspan="2">약 3시간 10분</td><td style="color:var(--text-2);font-weight:400;font-size:.76rem">교통비 4인 합계 약 18,000원 + 택시 / 이전보다 약 30분 단축</td></tr></tfoot>
+        <tfoot><tr><td colspan="3">총 이동시간</td><td colspan="2">약 3시간 10분</td><td style="color:var(--text-2);font-weight:400;font-size:.76rem">교통비 4인 합계 약 18,000원 / 부발역에서 도보 이동</td></tr></tfoot>
       </table>
     </div>
     <div class="note">
@@ -631,7 +693,7 @@ footer{text-align:center;padding:2rem;font-size:.73rem;color:var(--text-3);borde
       <ul>
         <li>인천 서구 예미지 → 버스 → 계양역 → 공항철도(일반) → 김포공항역</li>
         <li>김포공항역 → 9호선 급행 → 선정릉역 → 수인분당선 → 이매역</li>
-        <li>이매역 → 경강선(여주 방향) → 부발역 → 택시(약 7km) → 이천 인트라다 호텔</li>
+        <li>이매역 → 경강선(여주 방향) → 부발역 → 도보 → 이천 인트라다 호텔</li>
         <li>아빠는 별도 이동으로 이미 이천 인트라다 호텔 체크인 완료 후 대기</li>
         <li>이동 중 캐리어 보관 주의 / 혼잡 시간대 피해 13시 출발이 적당</li>
       </ul>
@@ -641,7 +703,7 @@ footer{text-align:center;padding:2rem;font-size:.73rem;color:var(--text-3);borde
   <!-- ── B Day 1 ── -->
   <div class="day-panel on" id="dB-B1">
     <div class="dhead">
-      <div class="dhead-row"><span class="day-num">1</span><h2>9월 25일 (목요일) — 이천 출발 · 성묘 · 경주 시내</h2></div>
+      <div class="dhead-row"><span class="day-num">1</span><h2>9월 24일 (목요일) — 이천 출발 · 성묘 · 경주 시내</h2></div>
       <div class="dhead-sub">
         <span>이천 인트라다 호텔 출발 07:00 (5인 전원)</span>
         <span>경주 공원묘원 성묘</span>
@@ -656,17 +718,21 @@ footer{text-align:center;padding:2rem;font-size:.73rem;color:var(--text-3);borde
           <tr class="rv-move"><td>07:00</td><td><b>이천 인트라다 호텔</b> 출발 (5인 전원)</td><td>–</td><td>–</td><td class="fc-na">–</td><td class="fc-na">–</td><td>영동고속도로→중부내륙고속도로 이용 / 하이패스 확인</td></tr>
           <tr class="rv-meal"><td>~08:30</td><td><b>충주 or 문경 휴게소</b> — 아침 <span class="b b-simple">간단</span></td><td>약 1.5시간</td><td>24시간</td><td class="fc-na">–</td><td><span class="fc">10,000원</span><small class="sub">인당 2,000</small></td><td>편의점 간식·음료 / 약 30분 정차</td></tr>
           <tr class="rv-move"><td>~10:00</td><td><b>경주IC</b> 도착</td><td>약 1.5시간</td><td>–</td><td class="fc-na">–</td><td class="fc-na">–</td><td>이천→경주 총 주행 약 250km · 약 3시간</td></tr>
-          <tr class="rv-sight"><td>10:15~11:15</td><td><b>경주 공원묘원</b> — 산소 참배</td><td>IC에서 약 15분</td><td>일출~일몰</td><td class="fc-free">무료</td><td class="fc-na">–</td><td>성묘 약 30~60분 / 제수는 전날 준비 권장</td></tr>
-          <tr class="rv-move"><td>~11:45</td><td> 경주 시내(황남동) 이동</td><td>약 15~20분</td><td>–</td><td class="fc-na">–</td><td class="fc-na">–</td><td></td></tr>
-          <tr class="rv-meal"><td>12:00~13:20</td><td><b>점심 — 황남 돼지국밥</b> <span class="b b-proper">★ 제대로 한식</span></td><td>도착 즉시</td><td>07:00~21:00</td><td class="fc-na">–</td><td><span class="fc">55,000원</span><small class="sub">인당 11,000</small></td><td>경주 대표 음식</td></tr>
-          <tr class="rv-sight"><td>13:30~15:00</td><td> <b class="spot-link" onclick="openSpot('daereungwon')">대릉원</b> (천마총) <span class="b b-paid">유료</span> <span class="b-must">필수</span></td><td>도보 5분</td><td>09:00~22:00</td><td><span class="fc">15,000원</span><small class="sub">인당 3,000</small></td><td class="fc-na">–</td><td>신라 고분군 / 천마도 실물 / 약 1.5시간</td></tr>
+          <tr class="rv-sight"><td>10:15~11:15</td><td><b>경주 공원묘원</b> — 산소 참배</td><td>IC에서 약 15분</td><td>일출~일몰</td><td class="fc-free">무료</td><td class="fc-na">–</td><td>성묘 약 30~60분</td></tr>
+          <tr class="rv-move"><td>~11:30</td><td>동천동 이동</td><td>약 15분</td><td>–</td><td class="fc-na">–</td><td class="fc-na">–</td><td>성묘 후 동천동 방면 이동</td></tr>
+          <tr class="rv-sight"><td>11:30~12:00</td><td><b>황성초등학교</b> 방문</td><td>도보</td><td>–</td><td class="fc-free">무료</td><td class="fc-na">–</td><td>가족 추억 탐방 / 교정 산책</td></tr>
+          <tr class="rv-meal"><td>12:00~13:00</td><td><b>점심 — 시골여행</b> <span class="b b-proper">★ 동천동 손칼국수</span></td><td>도보</td><td>–</td><td class="fc-na">–</td><td><span class="fc">40,000원</span><small class="sub">인당 8,000</small></td><td>경주 동천동 손칼국수 맛집</td></tr>
+          <tr class="rv-sight"><td>13:00~14:00</td><td><b>아빠 생가</b> 방문 · 축구</td><td>도보</td><td>–</td><td class="fc-free">무료</td><td class="fc-na">–</td><td>경주시 동천동 758-23 / 가족 추억 장소 · 축구</td></tr>
+          <tr class="rv-sight"><td>14:00~14:30</td><td><b>경주고등학교</b> 방문</td><td>차 약 5분</td><td>–</td><td class="fc-free">무료</td><td class="fc-na">–</td><td>경주 고등학교 방문 · 교정 산책</td></tr>
+          <tr class="rv-move"><td>~15:00</td><td>황남동(시내) 이동</td><td>약 15분</td><td>–</td><td class="fc-na">–</td><td class="fc-na">–</td><td></td></tr>
+          <tr class="rv-sight"><td>15:00~16:30</td><td> <b class="spot-link" onclick="openSpot('daereungwon')">대릉원</b> (천마총) <span class="b b-paid">천마총 유료</span> <span class="b-must">필수</span></td><td>도보 5분</td><td>09:00~22:00</td><td><span class="fc">11,000원</span><small class="sub">어른 3,000×2·청소년 2,000×2·어린이 1,000×1</small></td><td class="fc-na">–</td><td>대릉원 부지 자체는 무료(2023.5~) / 천마총 내부 관람만 유료 / 약 1.5시간</td></tr>
           <tr class="rv-sight"><td>15:00~16:30</td><td> <b class="spot-link" onclick="openSpot('cheomseongdae')">첨성대 · 계림 · 반월성</b> <span class="b b-free">무료</span> <span class="b-must">필수</span></td><td>도보 10분</td><td>09:00~22:00</td><td class="fc-free">무료</td><td class="fc-na">–</td><td>첨성대→계림(신라 김씨 발상 숲, 도보 5분, 필수 포토스팟)→반월성 연속 산책</td></tr>
           <tr class="rv-sight"><td>16:30~17:30</td><td> <b class="spot-link" onclick="openSpot('hwanglidangil')">황리단길</b> <span class="b b-free">무료</span></td><td>도보 5분</td><td>상점마다 상이</td><td class="fc-free">무료</td><td class="fc-na">–</td><td>카페 · 기념품 · 황남빵</td></tr>
           <tr class="rv-sleep"><td>17:30</td><td><b>체크인 — 바람곳 게스트하우스</b></td><td>차 약 10분</td><td>체크인 15:00~</td><td class="fc-na">–</td><td class="fc-na">–</td><td>3박 체류</td></tr>
           <tr class="rv-meal"><td>19:00~20:00</td><td><b>저녁 — 황리단길 간단식</b> <span class="b b-simple">간단</span></td><td>도보</td><td>–</td><td class="fc-na">–</td><td><span class="fc">20,000원</span><small class="sub">인당 4,000</small></td><td>분식·편의점 / 이동 긴 첫날, 가볍게 마무리</td></tr>
           <tr class="rv-sleep"><td>20:30</td><td> 숙소 복귀 · 자유 휴식</td><td>도보·차</td><td>–</td><td class="fc-na">–</td><td class="fc-na">–</td><td>장거리 운전 후 첫날 — 이른 취침 권장 / 동궁 야경은 내일 저녁</td></tr>
         </tbody>
-        <tfoot><tr><td colspan="4">1일차 소계</td><td><span class="fc">15,000원</span></td><td><span class="fc">85,000원</span></td><td style="color:var(--text-2);font-weight:400;font-size:.76rem">이천→경주 약 3시간 / 동궁 야경은 2일차로 이동</td></tr></tfoot>
+        <tfoot><tr><td colspan="4">1일차 소계</td><td><span class="fc">11,000원</span></td><td><span class="fc">65,000원</span></td><td style="color:var(--text-2);font-weight:400;font-size:.76rem">이천→경주 약 3시간 / 동천동 코스 추가 / 동궁 야경은 2일차로 이동</td></tr></tfoot>
       </table>
     </div>
   </div>
@@ -674,7 +740,7 @@ footer{text-align:center;padding:2rem;font-size:.73rem;color:var(--text-3);borde
   <!-- ── B Day 2 ── -->
   <div class="day-panel" id="dB-B2">
     <div class="dhead">
-      <div class="dhead-row"><span class="day-num">2</span><h2>9월 26일 (금요일) — 불국사 · 석굴암 · 국립경주박물관</h2></div>
+      <div class="dhead-row"><span class="day-num">2</span><h2>9월 25일 (금요일) — 불국사 · 석굴암 · 국립경주박물관</h2></div>
       <div class="dhead-sub">
         <span>불국사 09:00</span><span>석굴암 11:00</span><span>국립박물관 14:00</span><span>경주 한식 저녁 ★</span><span>동궁과 월지 야경 20:00</span>
       </div>
@@ -684,16 +750,16 @@ footer{text-align:center;padding:2rem;font-size:.73rem;color:var(--text-3);borde
         <thead><tr><th style="width:90px">시간</th><th>장소 / 활동</th><th style="width:90px">이동시간</th><th style="width:120px">운영시간</th><th style="width:100px">입장료(5인)</th><th style="width:105px">식비(5인)</th><th>비고 · 팁</th></tr></thead>
         <tbody>
           <tr class="rv-meal"><td>07:30~08:30</td><td><b>아침 — 황리단길 카페</b> <span class="b b-simple">간단</span></td><td>도보</td><td>08:00~</td><td class="fc-na">–</td><td><span class="fc">25,000원</span><small class="sub">인당 5,000</small></td><td>빵·음료</td></tr>
-          <tr class="rv-sight"><td>09:00~11:00</td><td> <b class="spot-link" onclick="openSpot('bulguksa')">불국사</b> <span class="b b-paid">유료</span> <span class="b-must">필수</span></td><td>차 약 25분</td><td>07:00~18:00</td><td><span class="fc">30,000원</span><small class="sub">인당 6,000</small></td><td class="fc-na">–</td><td>유네스코 세계유산 / 다보탑·석가탑 / 약 2시간</td></tr>
-          <tr class="rv-sight"><td>11:00~12:30</td><td> <b class="spot-link" onclick="openSpot('seokguram')">석굴암</b> <span class="b b-paid">유료</span> <span class="b-must">필수</span></td><td>셔틀 약 15분</td><td>07:00~17:30</td><td><span class="fc">30,000원</span><small class="sub">인당 6,000</small></td><td class="fc-na">–</td><td>셔틀 08:00~17:00 운행</td></tr>
+          <tr class="rv-sight"><td>09:00~11:00</td><td> <b class="spot-link" onclick="openSpot('bulguksa')">불국사</b> <span class="b b-free">무료</span> <span class="b-must">필수</span></td><td>차 약 25분</td><td>07:00~18:00</td><td class="fc-free">무료</td><td class="fc-na">–</td><td>유네스코 세계유산 / 다보탑·석가탑 / 2023.5.4~ 전국 사찰 무료 전환 / 약 2시간</td></tr>
+          <tr class="rv-sight"><td>11:00~12:30</td><td> <b class="spot-link" onclick="openSpot('seokguram')">석굴암</b> <span class="b b-free">무료</span> <span class="b-must">필수</span></td><td>셔틀 약 15분</td><td>07:00~17:30</td><td class="fc-free">무료</td><td class="fc-na">–</td><td>불국사와 동일하게 무료 전환 / 셔틀 08:00~17:00 운행(셔틀 요금 별도)</td></tr>
           <tr class="rv-meal"><td>12:30~13:30</td><td><b>점심 — 불국사 인근</b> <span class="b b-simple">간단</span></td><td>차 5분</td><td>–</td><td class="fc-na">–</td><td><span class="fc">35,000원</span><small class="sub">인당 7,000</small></td><td>산채비빔밥·칼국수</td></tr>
           <tr class="rv-sight"><td>14:00~16:00</td><td> <b class="spot-link" onclick="openSpot('museum')">국립경주박물관</b> <span class="b b-free">무료</span> <span class="b-must">필수</span></td><td>차 약 25분</td><td>10:00~18:00</td><td class="fc-free">무료</td><td class="fc-na">–</td><td>에어컨 完備 / 에밀레종</td></tr>
           <tr class="rv-sight"><td>16:00~17:30</td><td><b>교촌마을 &amp; 최부잣집</b> <span class="b b-free">무료</span></td><td>차 약 10분</td><td>항시 개방</td><td class="fc-free">무료</td><td class="fc-na">–</td><td>최씨 고택 외부 관람 (황리단길 Day 1에 방문 완료) / 전통 골목 산책 / 카페 휴식</td></tr>
           <tr class="rv-meal"><td>18:00~19:30</td><td><b>저녁 — 경주 쌈밥·솥밥</b> <span class="b b-proper">★ 제대로 한식</span></td><td>도보·차</td><td>11:00~21:00</td><td class="fc-na">–</td><td><span class="fc">60,000원</span><small class="sub">인당 12,000</small></td><td>경주 쌈밥 or 돌솥비빔밥 전문점 / 네이버·카카오 예약 권장</td></tr>
-          <tr class="rv-sight"><td>20:00~21:30</td><td> <b class="spot-link" onclick="openSpot('donggunggwolji')">동궁과 월지</b> 야경 <span class="b b-paid">유료</span> <span class="b-must">필수</span></td><td>차 약 10분</td><td>09:00~22:00<br>(입장 21:30)</td><td><span class="fc">15,000원</span><small class="sub">인당 3,000</small></td><td class="fc-na">–</td><td>경주 최고 야경 명소 ★★★ / 저녁 식사 후 여유 있게 감상 / 20:00 입장 권장</td></tr>
+          <tr class="rv-sight"><td>20:00~21:30</td><td> <b class="spot-link" onclick="openSpot('donggunggwolji')">동궁과 월지</b> 야경 <span class="b b-paid">유료</span> <span class="b-must">필수</span></td><td>차 약 10분</td><td>09:00~22:00<br>(입장 21:30)</td><td><span class="fc">11,000원</span><small class="sub">어른 3,000×2·청소년 2,000×2·어린이 1,000×1</small></td><td class="fc-na">–</td><td>경주 최고 야경 명소 ★★★ / 저녁 식사 후 여유 있게 감상 / 20:00 입장 권장</td></tr>
           <tr class="rv-sleep"><td>22:00</td><td> 숙소 복귀 · 휴식</td><td>차 약 10분</td><td>–</td><td class="fc-na">–</td><td class="fc-na">–</td><td></td></tr>
         </tbody>
-        <tfoot><tr><td colspan="4">2일차 소계</td><td><span class="fc">75,000원</span></td><td><span class="fc">120,000원</span></td><td style="color:var(--text-2);font-weight:400;font-size:.76rem">이동거리 총 약 70km / 동궁 야경 포함</td></tr></tfoot>
+        <tfoot><tr><td colspan="4">2일차 소계</td><td><span class="fc">11,000원</span></td><td><span class="fc">120,000원</span></td><td style="color:var(--text-2);font-weight:400;font-size:.76rem">이동거리 총 약 70km / 불국사·석굴암 무료 전환으로 입장료 대폭 감소</td></tr></tfoot>
       </table>
     </div>
   </div>
@@ -701,11 +767,10 @@ footer{text-align:center;padding:2rem;font-size:.73rem;color:var(--text-3);borde
   <!-- ── B Day 3 ── -->
   <div class="day-panel" id="dB-B3">
     <div class="dhead">
-      <div class="dhead-row"><span class="day-num">3</span><h2>9월 27일 (토요일) — 양동마을 · 동해 해안 코스</h2></div>
+      <div class="dhead-row"><span class="day-num">3</span><h2>9월 26일 (토요일) — 양동마을 · 동해 해안 코스</h2></div>
       <div class="dhead-sub">
         <span>양동마을 09:00</span>
         <span>옥산서원 11:00</span>
-        <span>골굴사 13:30</span>
         <span>문무대왕릉 · 주상절리 15:30</span>
       </div>
     </div>
@@ -714,17 +779,16 @@ footer{text-align:center;padding:2rem;font-size:.73rem;color:var(--text-3);borde
         <thead><tr><th style="width:90px">시간</th><th>장소 / 활동</th><th style="width:90px">이동시간</th><th style="width:120px">운영시간</th><th style="width:100px">입장료(5인)</th><th style="width:105px">식비(5인)</th><th>비고 · 팁</th></tr></thead>
         <tbody>
           <tr class="rv-meal"><td>08:00~09:00</td><td><b>아침 — 간단식</b> <span class="b b-simple">간단</span></td><td>–</td><td>–</td><td class="fc-na">–</td><td><span class="fc">15,000원</span><small class="sub">인당 3,000</small></td><td>편의점·빵</td></tr>
-          <tr class="rv-sight"><td>09:00~10:30</td><td> <b class="spot-link" onclick="openSpot('yangdong')">양동마을</b> <span class="b b-paid">유료</span></td><td>차 약 25분</td><td>09:00~18:00</td><td><span class="fc">20,000원</span><small class="sub">인당 4,000</small></td><td class="fc-na">–</td><td>유네스코 세계유산 / 조선 씨족마을</td></tr>
+          <tr class="rv-sight"><td>09:00~10:30</td><td> <b class="spot-link" onclick="openSpot('yangdong')">양동마을</b> <span class="b b-paid">유료</span></td><td>차 약 25분</td><td>09:00~18:00</td><td><span class="fc">13,500원</span><small class="sub">어른 4,000×2·청소년 2,000×2·어린이 1,500×1</small></td><td class="fc-na">–</td><td>유네스코 세계유산 / 조선 씨족마을</td></tr>
           <tr class="rv-sight"><td>10:30~11:30</td><td><b>옥산서원</b> <span class="b b-free">무료</span></td><td>차 약 15분</td><td>09:00~18:00</td><td class="fc-free">무료</td><td class="fc-na">–</td><td>양동마을 인근 / 이언적 서원</td></tr>
           <tr class="rv-meal"><td>12:00~13:00</td><td><b>점심 — 경주 시내 간단식</b> <span class="b b-simple">간단</span></td><td>차 약 30분</td><td>–</td><td class="fc-na">–</td><td><span class="fc">25,000원</span><small class="sub">인당 5,000</small></td><td>국수·김밥 / 동해안 출발 전</td></tr>
-          <tr class="rv-sight"><td>13:30~15:00</td><td> <b class="spot-link" onclick="openSpot('golgulsa')">골굴사 마애불</b> <span class="b b-paid">유료</span> <span class="b" style="background:var(--amber-pale);color:var(--amber);border:1px solid var(--amber-2)">선택</span></td><td>차 약 20분</td><td>08:00~18:00</td><td><span class="fc">20,000원</span><small class="sub">인당 4,000</small></td><td class="fc-na">–</td><td>암굴 법당 / 경사 계단 있음 — 50대 체력 상태 보며 현장 결정 / 생략 시 문무대왕릉 여유 탐방 or 카페 휴식</td></tr>
           <tr class="rv-sight"><td>15:00~16:00</td><td> <b class="spot-link" onclick="openSpot('munmudaewangneung')">감은사지 &amp; 문무대왕릉</b> <span class="b b-free">무료</span></td><td>차 약 15분</td><td>항시 개방</td><td class="fc-free">무료</td><td class="fc-na">–</td><td>삼국통일 기념 / 동해 바다 위 수중왕릉</td></tr>
-          <tr class="rv-sight"><td>16:00~17:00</td><td> <b class="spot-link" onclick="openSpot('jusangjeolli')">양남 주상절리</b> <span class="b b-paid">유료</span></td><td>차 약 10분</td><td>09:00~18:00</td><td><span class="fc">10,000원</span><small class="sub">인당 2,000</small></td><td class="fc-na">–</td><td>세계 유일 부채꼴 주상절리 ★★</td></tr>
+          <tr class="rv-sight"><td>16:00~17:00</td><td> <b class="spot-link" onclick="openSpot('jusangjeolli')">양남 주상절리</b> <span class="b b-free">무료</span></td><td>차 약 10분</td><td>09:00~18:00</td><td class="fc-free">무료</td><td class="fc-na">–</td><td>세계 유일 부채꼴 주상절리 ★★ / 파도소리길 산책로·주차 모두 무료</td></tr>
           <tr class="rv-move"><td>17:00~18:00</td><td> 경주 시내 복귀</td><td>약 35~40분</td><td>–</td><td class="fc-na">–</td><td class="fc-na">–</td><td></td></tr>
           <tr class="rv-meal"><td>18:30~19:30</td><td><b>저녁 — 간단식</b> <span class="b b-simple">간단</span></td><td>도보</td><td>–</td><td class="fc-na">–</td><td><span class="fc">15,000원</span><small class="sub">인당 3,000</small></td><td>편의점·분식 / 긴 이동 후 가볍게</td></tr>
           <tr class="rv-sleep"><td>20:00</td><td> 숙소 복귀 · 휴식</td><td>–</td><td>–</td><td class="fc-na">–</td><td class="fc-na">–</td><td>다음날 귀가 준비</td></tr>
         </tbody>
-        <tfoot><tr><td colspan="4">3일차 소계</td><td><span class="fc">50,000원</span></td><td><span class="fc">55,000원</span></td><td style="color:var(--text-2);font-weight:400;font-size:.76rem">이동거리 총 약 130km</td></tr></tfoot>
+        <tfoot><tr><td colspan="4">3일차 소계</td><td><span class="fc">13,500원</span></td><td><span class="fc">55,000원</span></td><td style="color:var(--text-2);font-weight:400;font-size:.76rem">이동거리 총 약 110km / 주상절리 무료 확인으로 입장료 감소</td></tr></tfoot>
       </table>
     </div>
   </div>
@@ -732,7 +796,7 @@ footer{text-align:center;padding:2rem;font-size:.73rem;color:var(--text-3);borde
   <!-- ── B Day 4 ── -->
   <div class="day-panel" id="dB-B4">
     <div class="dhead">
-      <div class="dhead-row"><span class="day-num">4</span><h2>9월 28일 (일요일) — 오전 여유 · 귀가</h2></div>
+      <div class="dhead-row"><span class="day-num">4</span><h2>9월 27일 (일요일) — 오전 여유 · 귀가</h2></div>
       <div class="dhead-sub">
         <span>남산 산책 09:00</span>
         <span>체크아웃 11:00</span>
@@ -762,9 +826,9 @@ footer{text-align:center;padding:2rem;font-size:.73rem;color:var(--text-3);borde
     <div class="sec-title"> 플랜 B — 3박 4일 예산 정리</div>
     <div class="b-cards">
       <div class="bcard"><div class="bl">총 식비 (5인)</div><div class="bv ok">300,000원</div></div>
-      <div class="bcard"><div class="bl">총 입장료 (5인)</div><div class="bv">140,000원</div></div>
-      <div class="bcard"><div class="bl">1인 식비</div><div class="bv">60,000원</div></div>
-      <div class="bcard"><div class="bl">1인 입장료</div><div class="bv">28,000원</div></div>
+      <div class="bcard"><div class="bl">총 입장료 (5인)</div><div class="bv ok">35,500원</div></div>
+      <div class="bcard"><div class="bl">1인 식비 평균</div><div class="bv">60,000원</div></div>
+      <div class="bcard"><div class="bl">1인 입장료 평균</div><div class="bv">7,100원</div></div>
       <div class="bcard"><div class="bl">제대로 한식</div><div class="bv warn">2회 ★</div></div>
       <div class="bcard"><div class="bl">주유비 별도</div><div class="bv note">약 12만원</div></div>
     </div>
@@ -778,53 +842,57 @@ footer{text-align:center;padding:2rem;font-size:.73rem;color:var(--text-3);borde
       <table class="mt">
         <thead><tr><th>날짜</th><th>끼니</th><th>내용</th><th>1인</th><th style="text-align:right">5인</th></tr></thead>
         <tbody>
-          <tr><td>9/25</td><td>아침</td><td>안성 휴게소 편의점</td><td>2,000원</td><td class="amt">10,000원</td></tr>
-          <tr class="proper"><td>9/25</td><td><b>점심 ★</b></td><td>황남 돼지국밥 (제대로 한식)</td><td>11,000원</td><td class="amt">55,000원</td></tr>
-          <tr><td>9/25</td><td>저녁</td><td>황리단길 분식·편의점</td><td>4,000원</td><td class="amt">20,000원</td></tr>
+          <tr><td>9/24</td><td>아침</td><td>안성 휴게소 편의점</td><td>2,000원</td><td class="amt">10,000원</td></tr>
+          <tr><td>9/24</td><td>점심</td><td>시골여행 · 동천동 손칼국수</td><td>8,000원</td><td class="amt">40,000원</td></tr>
+          <tr><td>9/24</td><td>저녁</td><td>황리단길 분식·편의점</td><td>4,000원</td><td class="amt">20,000원</td></tr>
           <tr class="sub"><td colspan="4">1일차 소계</td><td class="amt">85,000원</td></tr>
-          <tr><td>9/26</td><td>아침</td><td>황리단길 카페 빵·음료</td><td>5,000원</td><td class="amt">25,000원</td></tr>
-          <tr><td>9/26</td><td>점심</td><td>불국사 인근 산채비빔밥</td><td>7,000원</td><td class="amt">35,000원</td></tr>
-          <tr class="proper"><td>9/26</td><td><b>저녁 ★</b></td><td>경주 쌈밥·솥밥 (제대로 한식)</td><td>12,000원</td><td class="amt">60,000원</td></tr>
+          <tr><td>9/24</td><td>아침</td><td>황리단길 카페 빵·음료</td><td>5,000원</td><td class="amt">25,000원</td></tr>
+          <tr><td>9/24</td><td>점심</td><td>불국사 인근 산채비빔밥</td><td>7,000원</td><td class="amt">35,000원</td></tr>
+          <tr class="proper"><td>9/24</td><td><b>저녁 ★</b></td><td>경주 쌈밥·솥밥 (제대로 한식)</td><td>12,000원</td><td class="amt">60,000원</td></tr>
           <tr class="sub"><td colspan="4">2일차 소계</td><td class="amt">120,000원</td></tr>
-          <tr><td>9/27</td><td>아침</td><td>편의점·빵</td><td>3,000원</td><td class="amt">15,000원</td></tr>
-          <tr><td>9/27</td><td>점심</td><td>경주 시내 국수·김밥</td><td>5,000원</td><td class="amt">25,000원</td></tr>
-          <tr><td>9/27</td><td>저녁</td><td>편의점·분식</td><td>3,000원</td><td class="amt">15,000원</td></tr>
+          <tr><td>9/24</td><td>아침</td><td>편의점·빵</td><td>3,000원</td><td class="amt">15,000원</td></tr>
+          <tr><td>9/24</td><td>점심</td><td>경주 시내 국수·김밥</td><td>5,000원</td><td class="amt">25,000원</td></tr>
+          <tr><td>9/24</td><td>저녁</td><td>편의점·분식</td><td>3,000원</td><td class="amt">15,000원</td></tr>
           <tr class="sub"><td colspan="4">3일차 소계</td><td class="amt">55,000원</td></tr>
-          <tr><td>9/28</td><td>아침</td><td>편의점</td><td>3,000원</td><td class="amt">15,000원</td></tr>
-          <tr><td>9/28</td><td>점심</td><td>경주 시내 국밥·분식</td><td>5,000원</td><td class="amt">25,000원</td></tr>
+          <tr><td>9/24</td><td>아침</td><td>편의점</td><td>3,000원</td><td class="amt">15,000원</td></tr>
+          <tr><td>9/24</td><td>점심</td><td>경주 시내 국밥·분식</td><td>5,000원</td><td class="amt">25,000원</td></tr>
           <tr class="sub"><td colspan="4">4일차 소계</td><td class="amt">40,000원</td></tr>
         </tbody>
         <tfoot><tr><td colspan="4">합계</td><td class="amt ok" style="font-size:.95rem">300,000원</td></tr></tfoot>
       </table>
     </div>
 
-    <div class="sec-title sec-gap"> 입장료 상세 (5인 기준)</div>
+    <div class="sec-title sec-gap"> 입장료 상세 — 연령별 (성인 2 · 청소년 2 · 어린이 1, 총 5인)</div>
     <div class="twrap2">
       <table class="mt">
-        <thead><tr><th>날짜</th><th>장소</th><th>운영시간</th><th>1인</th><th style="text-align:right">5인</th></tr></thead>
+        <thead><tr><th>날짜</th><th>장소</th><th>성인 2인</th><th>청소년 2인</th><th>어린이 1인</th><th style="text-align:right">5인 합계</th></tr></thead>
         <tbody>
-          <tr><td>9/25</td><td>대릉원</td><td>09:00~22:00</td><td>3,000원</td><td class="amt">15,000원</td></tr>
-          <tr><td>9/26</td><td>불국사</td><td>07:00~18:00</td><td>6,000원</td><td class="amt">30,000원</td></tr>
-          <tr><td>9/26</td><td>석굴암</td><td>07:00~17:30</td><td>6,000원</td><td class="amt">30,000원</td></tr>
-          <tr><td>9/26</td><td>동궁과 월지 (야경)</td><td>09:00~22:00</td><td>3,000원</td><td class="amt">15,000원</td></tr>
-          <tr><td>9/27</td><td>양동마을</td><td>09:00~18:00</td><td>4,000원</td><td class="amt">20,000원</td></tr>
-          <tr><td>9/27</td><td>골굴사 <span style="font-size:.75em;color:var(--amber)">(선택)</span></td><td>08:00~18:00</td><td>4,000원</td><td class="amt">20,000원</td></tr>
-          <tr><td>9/27</td><td>양남 주상절리</td><td>09:00~18:00</td><td>2,000원</td><td class="amt">10,000원</td></tr>
-          <tr><td colspan="2" style="color:var(--text-2)">첨성대·계림·교촌마을·국립경주박물관·옥산서원·감은사지·문무대왕릉</td><td colspan="2">무료</td><td class="amt ok">0원</td></tr>
+          <tr><td>9/24</td><td>천마총 (대릉원 부지 자체는 무료)</td><td>3,000×2=6,000</td><td>2,000×2=4,000</td><td>1,000×1=1,000</td><td class="amt">11,000원</td></tr>
+          <tr><td>9/25</td><td>불국사</td><td colspan="3" style="color:var(--jade)">2023.5.4~ 전국 사찰 무료 전환</td><td class="amt ok">0원</td></tr>
+          <tr><td>9/25</td><td>석굴암</td><td colspan="3" style="color:var(--jade)">불국사와 동일 정책, 무료 전환</td><td class="amt ok">0원</td></tr>
+          <tr><td>9/25</td><td>동궁과 월지 (야경)</td><td>3,000×2=6,000</td><td>2,000×2=4,000</td><td>1,000×1=1,000</td><td class="amt">11,000원</td></tr>
+          <tr><td>9/26</td><td>양동마을</td><td>4,000×2=8,000</td><td>2,000×2=4,000</td><td>1,500×1=1,500</td><td class="amt">13,500원</td></tr>
+          <tr><td>9/26</td><td>양남 주상절리</td><td colspan="3" style="color:var(--jade)">파도소리길 산책로·주차 모두 무료 (기존 10,000원은 오류)</td><td class="amt ok">0원</td></tr>
+          <tr><td colspan="2" style="color:var(--text-2)">첨성대·계림·교촌마을·국립경주박물관·옥산서원·감은사지·문무대왕릉·경주 남산</td><td colspan="3">전 연령 무료</td><td class="amt ok">0원</td></tr>
         </tbody>
-        <tfoot><tr><td colspan="4">합계</td><td class="amt" style="font-size:.95rem">140,000원</td></tr></tfoot>
+        <tfoot><tr><td colspan="5">합계</td><td class="amt" style="font-size:.95rem">35,500원</td></tr></tfoot>
       </table>
     </div>
 
     <div class="note">
-      <strong>안내 사항</strong>
+      <strong>안내 사항 — 요금 산정 기준 (2026 추석 · 자녀 나이 반영)</strong>
       <ul>
-        <li>★ 표시는 제대로 된 한식 (1일차 점심 황남국밥, 2일차 저녁 쌈밥)</li>
-        <li>3일차는 이동거리 약 130km로 가장 바쁜 날 — 골굴사 or 주상절리 중 하나만 선택해도 OK</li>
+        <li>★ 표시는 제대로 된 한식 (1일차 점심 손칼국수, 2일차 저녁 쌈밥)</li>
+        <li>연령 구분: 성인(아빠·엄마), 청소년 13~18세(고1·중1 두 딸), 어린이 7~12세(초4 막내딸) — 시설별 청소년·어린이 요금을 각각 적용해 재계산함</li>
+        <li><b>불국사·석굴암은 2023년 5월 4일부터 전국 사찰 문화재관람료가 폐지되어 완전 무료</b> — 기존 60,000원(5인)은 삭제. 가장 큰 절감 요인</li>
+        <li><b>양남 주상절리(파도소리길)는 원래 무료</b>입니다 — 기존 표의 10,000원은 잘못된 정보였음, 산책로·전망대·주차 모두 무료</li>
+        <li>대릉원 부지 자체는 무료지만, 내부 천마총 전시관 관람만 별도 유료 (성인 3,000·청소년 2,000·어린이 1,000)</li>
+        <li><b>추석 연휴 무료개방 여부</b>: 2026년 추석(9/24~9/27) 국가유산청 무료개방은 서울 4대궁·종묘·조선왕릉에 한정됨. 경주의 천마총·동궁과 월지·양동마을은 경주시설관리공단이 별도 관리해 추석 특별 무료개방 정책이 확인되지 않아 평시 요금으로 계산함</li>
+        <li><b>다자녀가정 할인</b>: 해당 시설 공식 요금 안내에 다자녀가정 전용 할인 항목이 없음(국가유공자·장애인·경주시민 할인만 규정). 확정 할인으로 예산에 반영하지 않았으며, 매표소에서 가족관계증명서로 직접 문의 가능</li>
+        <li>3일차는 이동거리 약 110km — 양동마을·문무대왕릉·주상절리 순서로 방문</li>
         <li>토요일(4일차) 귀가 시 경부고속도로 정체 심할 수 있음 / 오후 1시 이전 출발 권장</li>
         <li>주유비: 왕복 약 700km / 연비 12km/L 기준 약 120,000~130,000원 별도</li>
-        <li>고속도로 통행료: 왕복 약 40,000~50,000원 별도</li>
-        <li>입장료는 성인 기준 / 경로·청소년·어린이 할인 별도 확인 필요</li>
+        <li>고속도로 통행료: 왕복 약 40,000~50,000원 별도 (추석 연휴 기간은 통행료 면제 적용될 수 있음 — 국토부 공지 확인 권장)</li>
       </ul>
     </div>
   </div>
@@ -879,7 +947,7 @@ const IMG='https://www.gyeongju.go.kr/upload/content/thumb/';
 const SPOTS={
   daereungwon:{
     name:'대릉원 (천마총)',
-    tags:['신라 고분군','국가사적 512호','입장료 3,000원'],
+    tags:['신라 고분군','국가사적 512호','대릉원 부지 무료 · 천마총만 유료'],
     must:true,
     photos:[IMG+'20200317/0C9F683425CD4D8680CAE27D791298C3.jpg',IMG+'20200317/64440C92BBD74CF0B7BA518D26B9976C.jpg',IMG+'20200626/6F60950937494F01BF66805080D33C38.jpg'],
     desc:'신라 왕과 귀족들의 대형 고분 23기가 모여 있는 고분공원. 천마총 내부를 직접 관람하며 신라 최고 걸작 천마도(국보)를 실물로 볼 수 있다. 황남대총·미추왕릉 등 역사의 숨결이 생생히 살아있다.',
@@ -906,7 +974,7 @@ const SPOTS={
   },
   donggunggwolji:{
     name:'동궁과 월지 (안압지)',
-    tags:['야경 명소 ★★★','입장료 3,000원','신라 왕궁 별궁'],
+    tags:['야경 명소 ★★★','성인 3,000·청소년 2,000·어린이 1,000원','신라 왕궁 별궁'],
     must:true,
     photos:[IMG+'20200317/A9E0A9F412B84EC68D1893C36D01E942.jpg'],
     desc:'문무왕이 삼국통일 후 조성한 왕궁의 별궁 정원. 연못에 반영된 누각의 야경이 경주 최고 포토스팟으로 꼽힌다. 밤 9시 30분까지 입장 가능해 저녁 일정에 딱 맞다.',
@@ -916,7 +984,7 @@ const SPOTS={
   },
   bulguksa:{
     name:'불국사',
-    tags:['유네스코 세계유산','입장료 6,000원','신라 751년 창건'],
+    tags:['유네스코 세계유산','무료 (2023.5~)','신라 751년 창건'],
     must:true,
     photos:[IMG+'20200626/227F27B4DDFD408592026D640C8AE4C0.jpg',IMG+'20200317/0C9F683425CD4D8680CAE27D791298C3.jpg'],
     desc:'경덕왕 10년(751) 김대성이 창건한 신라 최고의 사찰. 다보탑·석가탑·청운교·백운교 등 국보 8점이 한 경내에 집중된 불교 예술의 정수. 유네스코 세계문화유산.',
@@ -934,7 +1002,7 @@ const SPOTS={
   },
   seokguram:{
     name:'석굴암',
-    tags:['유네스코 세계유산','입장료 6,000원','국보 제24호'],
+    tags:['유네스코 세계유산','무료 (2023.5~)','국보 제24호'],
     must:true,
     photos:[IMG+'20200324/EB23B5F099F24FDFAB413CDC32EFC039.jpg'],
     desc:'토함산 중턱 화강암을 인공으로 쌓아 만든 석굴 사원. 본존 석가모니불 주위로 40개 조각상이 정교하게 배치된 신라 불교 예술의 극치. 유네스코가 인정한 인류 최고 문화유산.',
@@ -954,7 +1022,7 @@ const SPOTS={
   },
   yangdong:{
     name:'양동마을',
-    tags:['유네스코 세계유산','입장료 4,000원','조선 씨족마을'],
+    tags:['유네스코 세계유산','어른 4,000·청소년 2,000·어린이 1,500원','조선 씨족마을'],
     photos:[IMG+'20200626/5AA0CAFA65DA4C7BA7A765DC573E2DD6.jpg'],
     desc:'500년 역사의 월성 손씨·여강 이씨 씨족 집성촌. 고택 54채, 초가집 110채가 원형 보존. 국내 최대 규모 조선시대 양반 마을로 2010년 유네스코 세계유산 등재.',
     mustSee:['향단 — 이언적 선생 고택, 조선 최고 명당 건축으로 꼽히는 상류 가옥','관가정 — 마을 전체를 내려다보는 언덕 위 정자형 건물','안락정 누각 — 마을 입구 풍광이 최고, 산 아래 초가집 전경 포토스팟','서백당 — 월성 손씨 종가, 300년 이상 된 향나무가 마당에 자람'],
@@ -987,7 +1055,7 @@ const SPOTS={
   },
   jusangjeolli:{
     name:'양남 주상절리',
-    tags:['입장료 2,000원','세계 유일 부채꼴','천연기념물 제536호'],
+    tags:['무료','세계 유일 부채꼴','천연기념물 제536호'],
     photos:[IMG+'20200626/51DDA8735ED545C3946564445CA984F0.jpg'],
     desc:'동해 해안가에 펼쳐진 기이한 기둥 모양의 바위. 세계 유일 부채꼴(선형 방사상) 주상절리로 학술 가치가 높다. 파도가 부서지는 절경과 함께 절묘한 자연 조형미를 감상할 수 있다.',
     mustSee:['부채꼴 주상절리 — 세계 유일 형태, 데크 중간 전망대에서 전체 부채꼴 확인','파도 충돌 지점 — 썰물 때 절리 기저 노출, 밀물 때 파도 충돌 장관','읍천항 벽화마을 — 주상절리 관람 후 도보 5분, 그림 있는 골목'],
